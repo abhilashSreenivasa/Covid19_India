@@ -1,0 +1,28 @@
+<div class="total">
+    <div class="total-cat">
+        <div>Confirmed</div>
+        <div><%=todayTotal.dailyconfirmed   %></div>
+        <div><%=todayTotal.totalconfirmed  %></div>
+    </div>
+
+    <div class="total-cat">
+        <div>Active</div>
+        <div>null</div>
+        <div><%=todayTotal.totalconfirmed-todayTotal.totalrecovered-todayTotal.totaldeceased    %></div>
+    </div>
+
+    <div class="total-cat">
+        <div>Recovered</div>
+        <div><%=todayTotal.dailyrecovered   %></div>
+        <div><%=todayTotal.totalrecovered   %></div>
+    </div>
+
+    <div class="total-cat">
+        <div>Deceased</div>
+        <div><%=todayTotal.dailydeceased   %></div>
+        <div><%=todayTotal.totaldeceased  %></div>
+
+
+    </div>
+
+</div>
