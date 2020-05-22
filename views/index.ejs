@@ -1,28 +1,82 @@
+<div class="main">
+    <div class="header">COVID19 <span>INDIA</span> </div>
 <div class="total">
     <div class="total-cat">
-        <div>Confirmed</div>
-        <div><%=todayTotal.dailyconfirmed   %></div>
-        <div><%=todayTotal.totalconfirmed  %></div>
+        <div class="total-confirmed-text" >Confirmed</div>
+        <div class="total-confirmed-delta">[+<%=statesTotal[0].deltaconfirmed   %>]</div>
+        <div class="total-confirmed"><%=statesTotal[0].confirmed  %></div>
     </div>
 
     <div class="total-cat">
-        <div>Active</div>
-        <div>null</div>
-        <div><%=todayTotal.totalconfirmed-todayTotal.totalrecovered-todayTotal.totaldeceased    %></div>
+        <div class="total-active-text">Active</div>
+        <div class="total-active-delta">active</div>
+        <div class="total-active"><%=statesTotal[0].active   %></div>
     </div>
 
     <div class="total-cat">
-        <div>Recovered</div>
-        <div><%=todayTotal.dailyrecovered   %></div>
-        <div><%=todayTotal.totalrecovered   %></div>
+        <div class="total-recovered-text">Recovered</div>
+        <div class="total-recovered-delta">[+<%=statesTotal[0].deltarecovered   %>]</div>
+        <div class="total-recovered"><%=statesTotal[0].recovered   %></div>
     </div>
 
     <div class="total-cat">
-        <div>Deceased</div>
-        <div><%=todayTotal.dailydeceased   %></div>
-        <div><%=todayTotal.totaldeceased  %></div>
-
+        <div class="total-deceased-text">Deceased</div>
+        <div class="total-deceased-delta">[+<%=statesTotal[0].deltadeaths   %>]</div>
+        <div class="total-deceased"><%=statesTotal[0].deaths  %></div>
 
     </div>
+
+</div>
+
+<div class="state">
+
+ <% statesTotal.forEach(s=>{ %>
+<div class="state-each">      
+<div class="state-name">
+   <%=s.state %>
+</div>
+<div class="confirmed">
+    <div class="state-confirmed-delta">
+        +<%=s.deltaconfirmed %>
+    </div>
+    <div class="state-confirmed">
+        <%=s.confirmed %>
+    </div>
+    
+</div>
+<div class="active">
+    <div class="state-active">
+        <%=s.active %>
+    </div>
+   
+</div>
+<div class="recovered">
+    <div class="state-recovered-delta">
+        +<%=s.deltarecovered %>
+    </div>
+    <div class="state-recovered">
+        <%=s.recovered %>
+    </div>
+    
+</div>
+
+<div class="deceased">
+    <div class="state-deceased-delta">
+        +<%=s.deltadeaths %>
+    </div>
+
+    <div class="state-deceased">
+        <%=s.deaths %>
+    </div>
+</div>
+</div> 
+ 
+<% })  %>
+
+</div>
+
+
+
+
 
 </div>

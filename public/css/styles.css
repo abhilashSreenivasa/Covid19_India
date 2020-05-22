@@ -1,7 +1,160 @@
+html,body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+  padding: 0px;
+  padding-bottom: 10px;
+  background-color:rgb(3, 5, 36);
+min-height:100%;
+min-width:100%;
+max-width: 100%;
+    overflow-x: hidden;
+    color:rgba(163, 157, 157, 0.918);
+    font-size: 12px;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+}
+
+.header{
+    font-size: 25px;
+    font-weight: bold;
+
+}
+.header span{
+    color:rgb(63, 63, 235);
+}
+
 .total{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 .total-cat{
+    align-items: center;
+    justify-content: center;
     padding:7px;
 }
+.total-confirmed-text{
+    color:rgb(214, 7, 7);
+}
+.total-active-text{
+    color:rgb(63, 63, 235);
+}
+.total-recovered-text{
+    color:rgb(11, 197, 11);
+}
+.total-deceased-text{
+    color:rgb(131, 124, 124);
+}
+.total-confirmed-delta{
+    color:rgb(214, 7, 7);
+    font-size:11px;
+    padding:5px 0px;
+}
+.total-confirmed{
+    color:rgb(214, 7, 7);
+    font-size: 17px;
+}
+.total-active-delta{
+    color:rgb(3, 5, 36);
+    padding:5px 0px;
+    font-size:11px;
+}
+.total-active{
+    color:rgb(63, 63, 235);
+    font-size: 17px;
+}
+.total-recovered-delta{
+    color:rgb(11, 197, 11);
+    font-size:11px;
+    padding:5px 0px;
+}
+.total-recovered{
+    color:rgb(11, 197, 11);
+    font-size: 17px;
+}
+.total-deceased-delta{
+    color:rgb(131, 124, 124);
+    font-size:11px;
+    padding:5px 0px;
+}
+.total-deceased{
+    color:rgb(131, 124, 124);
+    font-size: 17px;
+}
+
+
+.state{
+    display: flex;
+    flex-direction: column;
+}
+
+.state-each{
+    display: flex;
+    padding: 5px;
+}
+.state-name{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.confirmed{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:5px;
+}
+.state-confirmed-delta{
+    margin-right:3px;
+    font-size:9px;
+    color: red;
+}
+.state-confirmed{
+
+}
+
+.active{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:5px;
+}
+.state-active{
+    
+}
+
+.recovered{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:5px;
+}
+.state-recovered-delta{
+    margin-right:3px;
+    font-size:9px;
+    color: rgb(11, 197, 11);
+}
+.state-recovered{
+
+}
+
+.deceased{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:5px;
+}
+.state-deceased-delta{
+    margin-right:5px;
+    font-size:9px;
+    color:rgb(131, 124, 124);
+}
+.state-deceased{
+
+}
+
