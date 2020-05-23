@@ -111,7 +111,14 @@ max-width: 100%;
 }
 .state-each{
     display: flex;
+    cursor: pointer;
 }
+.state-each:hover + .state-name{
+    background-color: rgb(4, 109, 4);
+    color:black;
+
+}
+
 .state-name-header{
     display: flex;
     align-items: center;
@@ -187,7 +194,9 @@ max-width: 100%;
     max-width: 100px;
     flex-wrap: wrap;
     background-color: black;
+   
 }
+
 .confirmed{
     display: flex;
     align-items: center;
@@ -262,4 +271,81 @@ max-width: 100%;
 .state-deceased{
 
 }
+.head-phone{
+    display: none;
+}
 
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+    .state-each{
+        font-size:11px;
+    }
+    .state-name-header{
+        min-width:50px;
+        max-width:50px;
+       
+    }
+
+    .confirmed-header{
+        min-width:50px;
+        max-width:50px;
+        
+    }
+    .active-header{
+        min-width:50px;
+        max-width:50px;
+      
+    }
+    .deceased-header{
+        min-width:50px;
+        max-width:50px;
+       
+    }
+    .recovered-header{
+        min-width:50px;
+        max-width:50px;
+        
+    }
+    .state-name{
+        min-width:50px;
+        max-width:50px;
+        flex-wrap: wrap;
+        font-size: 9px;
+    }
+    .confirmed{
+        min-width:50px;
+        max-width:50px;
+        flex-wrap: wrap;
+    }
+    .active{
+        min-width:50px;
+        max-width:50px;
+        flex-wrap: wrap;
+    }
+    .recovered{
+        min-width:50px;
+        max-width:50px;
+        flex-wrap: wrap;
+    }
+    .deceased{
+        min-width:50px;
+        max-width:50px;
+        flex-wrap: wrap;
+    }
+    .head-dex{
+        display: none;
+    }
+    .head-phone{
+        display:block;
+    }
+    
+    
+  }
