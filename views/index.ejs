@@ -29,15 +29,41 @@
 </div>
 
 <div class="state">
+<div class="state-header">
+    <div class="state-name-header">
+        state
+    </div>
+    <div class="confirmed-header">
+        confirmed
+
+    </div>
+    <div class="active-header">
+        active
+
+    </div>
+    <div class="recovered-header">
+        recovered
+    </div>
+    <div class="deceased-header">
+        deceased
+    </div>
+
+   
+</div>
 
  <% statesTotal.forEach(s=>{ %>
+    <% if(s.state==="Total") { %>
+        <%return;%>
+        <% } %>
 <div class="state-each">      
 <div class="state-name">
    <%=s.state %>
 </div>
 <div class="confirmed">
     <div class="state-confirmed-delta">
+        <% if(s.deltaconfirmed!=0){ %>
         +<%=s.deltaconfirmed %>
+        <%} %>
     </div>
     <div class="state-confirmed">
         <%=s.confirmed %>
@@ -52,7 +78,9 @@
 </div>
 <div class="recovered">
     <div class="state-recovered-delta">
+        <% if(s.deltarecovered!=0){ %>
         +<%=s.deltarecovered %>
+        <%} %>
     </div>
     <div class="state-recovered">
         <%=s.recovered %>
@@ -62,7 +90,9 @@
 
 <div class="deceased">
     <div class="state-deceased-delta">
+        <% if(s.deltadeaths!=0) {%>
         +<%=s.deltadeaths %>
+        <%} %>
     </div>
 
     <div class="state-deceased">
