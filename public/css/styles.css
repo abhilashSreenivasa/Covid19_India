@@ -11,6 +11,10 @@ max-width: 100%;
     color:rgba(163, 157, 157, 0.918);
     font-size: 12px;
 }
+body{
+    display: flex;
+    flex-direction: column;
+}
 .main{
     display: flex;
     flex-direction: column;
@@ -275,7 +279,25 @@ max-width: 100%;
 .head-phone{
     display: none;
 }
-
+marquee{
+    width:50%;
+    color:rgb(199, 186, 2);
+    padding-bottom: 10px;
+}
+#footer{
+    display: flex;
+    background-color:rgb(43, 40, 40) ;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+   margin-top: auto;
+   bottom: 0;
+  left:0;
+  height:50px;
+  width:100%;
+  font-size:12px;
+  padding:0px 5px;
+ }
 
 
 
@@ -285,13 +307,16 @@ max-width: 100%;
 
 
 @media only screen and (max-width: 600px) {
+    marquee{
+        width:80%;
+    }
 
     .state{
         justify-content: center;
         width:95%;
     }
     .state-each{
-        font-size:14px;
+        font-size:13.5px;
         box-sizing: border-box;
         
        
@@ -345,7 +370,7 @@ max-width: 100%;
         min-width:25%;
         max-width:25%;
         flex-wrap: wrap;
-        
+        font-size: 12.5px;
         color:rgb(12, 145, 145);
         justify-content: left;
         padding:5px 2.5px;
@@ -392,6 +417,19 @@ max-width: 100%;
     .head-phone{
         display:block;
     }
+    #footer{
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+        height:100px;
+        font-size:8px;
+        
+
+    }
+    .footer-content{
+        padding:5px 0px;
+    }
+  
     
     
   }
